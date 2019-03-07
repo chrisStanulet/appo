@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { RouterModule, Route } from '@angular/router';
 
 import {
   
@@ -49,22 +48,17 @@ import { NotesComponent } from './Notes View/notes/notes.component';
 import { HomeComponent } from './Home Page/home/home.component';
 import { NoteServiceService } from './note-service.service';
 import { NotesViewComponent } from './Notes View/notes/notes-view/notes-view.component';
-import { AppRoutingModule } from './app-routing.module';
 
 
 //app router
-const appRoute = [
-  { path: 'notes', component: NotesComponent  },
-  { path: 'home', component: HomeComponent },
-  {path: 'noteView', component:NotesViewComponent}
-];
+
 
 
 
 
 @NgModule({
   imports:      [ 
-  RouterModule.forRoot(appRoute),
+
   BrowserAnimationsModule,
   BrowserModule, 
   FormsModule,   
@@ -102,8 +96,7 @@ const appRoute = [
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
-  MatTreeModule,
-  AppRoutingModule, ],
+  MatTreeModule, ],
   
   declarations: [ AppComponent, HelloComponent, NotesComponent, HomeComponent, NotesViewComponent ],
   bootstrap:    [ AppComponent ],
