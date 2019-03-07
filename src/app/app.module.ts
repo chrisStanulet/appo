@@ -49,6 +49,7 @@ import { NotesComponent } from './Notes View/notes/notes.component';
 import { HomeComponent } from './Home Page/home/home.component';
 import { NoteServiceService } from './note-service.service';
 import { NotesViewComponent } from './Notes View/notes/notes-view/notes-view.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 //app router
@@ -101,7 +102,8 @@ const appRoute = [
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
-  MatTreeModule, ],
+  MatTreeModule,
+  AppRoutingModule, ],
   
   declarations: [ AppComponent, HelloComponent, NotesComponent, HomeComponent, NotesViewComponent ],
   bootstrap:    [ AppComponent ],

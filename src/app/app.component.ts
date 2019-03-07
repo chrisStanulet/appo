@@ -8,11 +8,6 @@ import { Component } from '@angular/core';
 
 
 
-class Class {
-  constructor(name1:string, numberOfNotes:number ){
-
-  }
-}
 
 export class AppComponent  {
   name = 'Angular';
